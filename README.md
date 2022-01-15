@@ -23,7 +23,7 @@ Mappings in Solidity act like hashmaps or dictionaries in other programming lang
 
 Mappings are created with the syntax `mapping (keyType => valueType)`
 
-```solidity=
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
@@ -52,7 +52,7 @@ contract Mapping {
 
 We can also create nested mappings, where the `key` points to a second nested mapping. To do this, we set the `valueType` to a mapping itself.
 
-```solidity=
+```solidity
 contract NestedMappings {
     // Mapping from address => (mapping from uint to bool)
     mapping(address => mapping(uint => bool)) public nestedMap;
@@ -81,7 +81,7 @@ contract NestedMappings {
 ## Enums
 The word `Enum` stands for `Enumerable`. They are user defined types that contain human readable names for a set of constants, called members. They are commonly used to restrict a variable to only have one of a few predefined values. Since they are just an abstraction for human readable constants, in actuality, they are internally represented as `uint`s.
 
-```solidity=
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
@@ -126,7 +126,7 @@ contract Enum {
 ## Structs
 The concept of structs exists in many high level programming languages. They are used to define your own data types which group together related data. 
 
-```solidity=
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
@@ -175,7 +175,7 @@ Getter functions (those which return values) can be declared either `view` or `p
 - `View`: Functions which do not change any state values
 - `Pure`: Functions which do not change any state values, but also don't read any state values
 
-```solidity=
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
@@ -198,7 +198,7 @@ contract ViewAndPure {
 ## Function Modifiers
 Modifiers are code that can be run before and/or after a function call. They are commonly used for restricting access to certain functions, validing input parameters, protecting against certain types of attacks, etc.
 
-```solidity=
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
@@ -234,7 +234,7 @@ contract Modifiers {
 ## Events
 Events allow contracts to perform logging on the Ethereum blockchain. Logs for a given contract can be parsed later to perform updates on the frontend interface, for example. They are commonly used to allow frontend interfaces to listen for specific events and update the user interface, or used as a cheap form of storage.
 
-```solidity=
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
@@ -254,7 +254,7 @@ A `constructor` is an optional function that is executed when the contract is fi
 
 P.S. - If you remember, we actually used constructors in the Freshman track Cryptocurency and NFT tutorials!
 
-```solidity=
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
@@ -280,7 +280,7 @@ A child contrant that is going to override a parent function must use the `overr
 
 The order of inheritance matters if parent contracts share methods or attributes by the same name.
 
-```solidity=
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
@@ -353,7 +353,7 @@ However, if you are writing a contract that you want to be able to receive ETH t
 
 `receive()` is called if `msg.data` is an empty value, and `fallback()` is used otherwise.
 
-```solidity=
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
@@ -404,7 +404,7 @@ Note: Interfaces you use do not need to be extensive. i.e. they do not need to n
 
 Assume there is an external `ERC20` contract, and we are interested in calling the `balanceOf` function to check the balance of a given address from our contract. 
 
-```solidity=
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
@@ -442,7 +442,7 @@ Assume we have a folder structure like this:
 ```
 
 where `Foo.sol` is 
-```solidity=
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
@@ -452,7 +452,7 @@ contract Foo {
 ```
 
 We can import `Foo` and use it in `Import.sol` as such
-```solidity=
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
@@ -475,7 +475,7 @@ NOTE: When we use Hardhat, we can also install contracts as node modules through
 ### External Imports
 You can also import from Github by simply copying the URL. We did this in the Cryptocurrency and NFT tutorials in the Freshman track.
 
-```solidity=
+```solidity
 // https://github.com/owner/repo/blob/branch/path/to/Contract.sol
 import "https://github.com/owner/repo/blob/branch/path/to/Contract.sol";
 
@@ -490,7 +490,7 @@ Libraries are similar to contracts in Solidity, with a few limitations. Librarie
 
 Typically, libraries are used to add helper functions to your contracts. An extremely commonly used library in Solidity world is `SafeMath` - which ensures that mathematical operations do not cause an integer underflow or overflow.
 
-```solidity=
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
