@@ -144,13 +144,13 @@ contract TodoList {
         // There are multiple ways to initialize structs
         
         // Method 1 - Call it like a function
-        todos.push(Todo(_text, false));
+        todos.push(TodoItem(_text, false));
         
         // Method 2 - Explicitly set its keys
-        todos.push(Todo({ text: _text, completed: false }));
+        todos.push(TodoItem({ text: _text, completed: false }));
         
         // Method 3 - Initialize an empty struct, then set individual properties
-        Todo memory todo;
+        TodoItem memory todo;
         todo.text = _text;
         todo.completed = false;
         todos.push(todo);
