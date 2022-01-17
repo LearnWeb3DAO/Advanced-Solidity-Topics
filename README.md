@@ -353,6 +353,8 @@ However, if you are writing a contract that you want to be able to receive ETH t
 
 `receive()` is called if `msg.data` is an empty value, and `fallback()` is used otherwise.
 
+> `msg.data` is a way to specify arbitary data along with a transaction. You will usually not be using it manually.
+
 ```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
