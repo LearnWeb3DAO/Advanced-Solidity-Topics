@@ -5,18 +5,24 @@ In the Freshman track, we looked at some basic Solidity syntax. We covered varia
 However, Solidity has a few more things, things which will be important through the coding assignments of the Sophomore track and beyond. In this tutorial, we will cover some more important Solidity topics.
 
 ## Index
-- [Mappings](#mappings)
-- [Enums](#enums)
-- [Structs](#structs)
-- [View and Pure Functions](#view-and-pure-functions)
-- [Function Modifiers](#function-modifiers)
-- [Events](#events)
-- [Constructors](#constructors)
-- [Inheritance](#inheritance)
-- [Transferring ETH](#transferring-eth)
-- [Calling external contracts](#calling-external-contracts)
-- [Import statements](#import-statements)
-- [Solidity Libraries](#solidity-libraries)
+- [Advanced Solidity Topics](#advanced-solidity-topics)
+  - [Index](#index)
+  - [Mappings](#mappings)
+  - [Enums](#enums)
+  - [Structs](#structs)
+  - [View and Pure Functions](#view-and-pure-functions)
+  - [Function Modifiers](#function-modifiers)
+  - [Events](#events)
+  - [Constructors](#constructors)
+  - [Inheritance](#inheritance)
+  - [Transferring ETH](#transferring-eth)
+    - [How to receive Ether in a regular Ethereum account address](#how-to-receive-ether-in-a-regular-ethereum-account-address)
+    - [How to receive Ether in a contract](#how-to-receive-ether-in-a-contract)
+  - [Calling External Contracts](#calling-external-contracts)
+  - [Import Statements](#import-statements)
+    - [Local Imports](#local-imports)
+    - [External Imports](#external-imports)
+  - [Solidity Libraries](#solidity-libraries)
 
 ## Mappings
 Mappings in Solidity act like hashmaps or dictionaries in other programming languages. They are used to store the data in key-value pairs. 
@@ -276,7 +282,7 @@ Note: We actually also did Inheritance in the Freshman Track Cryptocurrency and 
 
 A parent contract which has a function that can be overridden by a child contract must be declared as a `virtual` function.
 
-A child contrant that is going to override a parent function must use the `override` keyword.
+A child contract that is going to override a parent function must use the `override` keyword.
 
 The order of inheritance matters if parent contracts share methods or attributes by the same name.
 
