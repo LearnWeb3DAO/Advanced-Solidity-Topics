@@ -7,7 +7,9 @@ However, Solidity has a few more things, things which will be important through 
 ## Prefer a Video?
 If you would rather learn from a video, we have a recording available of this tutorial on our YouTube. It is split into 2 parts, and there are timestamps. Watch the video by clicking on the screenshot below, or go ahead and read the tutorial!
 
+#### Part 1
 [![Part #1](https://i.imgur.com/dhLr0hd.png)](https://www.youtube.com/watch?v=Z5P3rKBRmEM)
+#### Part 2
 [![Part #2](https://i.imgur.com/salTswb.png)](https://www.youtube.com/watch?v=ILY3fIbwjk0)
 
 
