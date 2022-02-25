@@ -37,7 +37,7 @@ Mappings are created with the syntax `mapping (keyType => valueType)`
 pragma solidity ^0.8.10;
 
 contract Mapping {
-    // Mapping from address to uints
+    // Mapping from address to uint
     mapping(address => uint) public myMap;
     
     function get(address _addr) public view returns (uint) {
@@ -205,7 +205,7 @@ contract ViewAndPure {
 ```
 
 ## Function Modifiers
-Modifiers are code that can be run before and/or after a function call. They are commonly used for restricting access to certain functions, validing input parameters, protecting against certain types of attacks, etc.
+Modifiers are code that can be run before and/or after a function call. They are commonly used for restricting access to certain functions, validating input parameters, protecting against certain types of attacks, etc.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -261,7 +261,7 @@ contract Events {
 ## Constructors
 A `constructor` is an optional function that is executed when the contract is first deployed. You can also pass arguments to constructors.
 
-P.S. - If you remember, we actually used constructors in the Freshman track Cryptocurency and NFT tutorials!
+P.S. - If you remember, we actually used constructors in the Freshman track Cryptocurrency and NFT tutorials!
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -285,7 +285,7 @@ Note: We actually also did Inheritance in the Freshman Track Cryptocurrency and 
 
 A parent contract which has a function that can be overridden by a child contract must be declared as a `virtual` function.
 
-A child contrant that is going to override a parent function must use the `override` keyword.
+A child contract that is going to override a parent function must use the `override` keyword.
 
 The order of inheritance matters if parent contracts share methods or attributes by the same name.
 
@@ -362,7 +362,7 @@ However, if you are writing a contract that you want to be able to receive ETH t
 
 `receive()` is called if `msg.data` is an empty value, and `fallback()` is used otherwise.
 
-> `msg.data` is a way to specify arbitary data along with a transaction. You will usually not be using it manually.
+> `msg.data` is a way to specify arbitrary data along with a transaction. You will usually not be using it manually.
 
 ```solidity
 // SPDX-License-Identifier: MIT
