@@ -9,10 +9,10 @@ If you would rather learn from a video, we have a recording available of this tu
 
 #### Part 1
 [![Part 
-#1](./assets/video-preview1.webp)](https://www.youtube.com/watch?v=Z5P3rKBRmEM)
+#1](https://raw.githubusercontent.com/LearnWeb3DAO/Advanced-Solidity-Topics/main/assets/video-preview1.webp)](https://www.youtube.com/watch?v=Z5P3rKBRmEM)
 #### Part 2
 [![Part 
-#2](./assets/video-preview2.webp)](https://www.youtube.com/watch?v=ILY3fIbwjk0)
+#2](https://raw.githubusercontent.com/LearnWeb3DAO/Advanced-Solidity-Topics/main/assets/video-preview2.webp)](https://www.youtube.com/watch?v=ILY3fIbwjk0)
 
 
 ## Index
