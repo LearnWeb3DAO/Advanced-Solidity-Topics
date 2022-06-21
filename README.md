@@ -89,6 +89,8 @@ contract NestedMappings {
 }
 ```
 
+<Quiz questionId="dc7e7818-b3bc-4e10-8cbd-1c2e497fb270" />
+
 ## Enums
 The word `Enum` stands for `Enumerable`. They are user defined types that contain human readable names for a set of constants, called members. They are commonly used to restrict a variable to only have one of a few predefined values. Since they are just an abstraction for human readable constants, in actuality, they are internally represented as `uint`s.
 
@@ -133,6 +135,8 @@ contract Enum {
     }
 }
 ```
+
+<Quiz questionId="50b8f51f-5ee7-4e4d-b9c6-4e2ad54bf5a3" />
 
 ## Structs
 The concept of structs exists in many high level programming languages. They are used to define your own data types which group together related data. 
@@ -179,6 +183,8 @@ contract TodoList {
 }
 ```
 
+<Quiz questionId="f1d1f4fd-7b3c-4749-a13c-5773cbff8915" />
+
 ## View and Pure Functions
 You might have noticed that some of the functions we have been writing specify one of either a `view` or `pure` keyword in the function header. These are special keywords which indicate specific behavior for the function.
 
@@ -205,6 +211,9 @@ contract ViewAndPure {
     }
 }
 ```
+
+<Quiz questionId="b80ae48a-1064-4b65-b3ce-eed33af1b22a" />
+<Quiz questionId="b0b996d9-67df-415c-8083-0da0021c7212" />
 
 ## Function Modifiers
 Modifiers are code that can be run before and/or after a function call. They are commonly used for restricting access to certain functions, validating input parameters, protecting against certain types of attacks, etc.
@@ -242,6 +251,8 @@ contract Modifiers {
 }
 ```
 
+<Quiz questionId="39766f33-9b10-49ec-9215-464161846f63" />
+
 ## Events
 Events allow contracts to perform logging on the Ethereum blockchain. Logs for a given contract can be parsed later to perform updates on the frontend interface, for example. They are commonly used to allow frontend interfaces to listen for specific events and update the user interface, or used as a cheap form of storage.
 
@@ -259,6 +270,8 @@ contract Events {
     }
 }
 ```
+
+<Quiz questionId="0a8eb990-d7c8-4bb6-bd33-eb02691e21c5" />
 
 ## Constructors
 A `constructor` is an optional function that is executed when the contract is first deployed. You can also pass arguments to constructors.
@@ -279,6 +292,8 @@ contract X {
     }
 }
 ```
+
+<Quiz questionId="bcb76e7c-f4dd-4be3-b73d-78ab3701e973" />
 
 ## Inheritance
 Inheritance is the procedure by which one contract can inherit the attributes and methods of another contract. Solidity supports multiple inheritance. Contracts can inherit other contract by using the `is` keyword. 
@@ -349,6 +364,8 @@ contract E is C, B {
 
 ```
 
+<Quiz questionId="c89ae39d-611a-40e6-a506-c4a047e2f951" />
+
 ## Transferring ETH
 There are three ways to transfer ETH from a contract to some other address. However, two of them are no longer recommended methods by Solidity in latest versions, therefore we shall skip those.
 
@@ -409,6 +426,9 @@ contract SendEther {
     }
 }
 ```
+
+<Quiz questionId="5c21f649-71a8-4216-a36e-e342a75c16cc" />
+<Quiz questionId="7852870f-423e-4265-a144-cef24af6d15e" />
 
 ## Calling External Contracts
 Contracts can call other contracts by just calling functions on an instance of the other contract like `A.foo(x, y, z)`. To do so, you must have an interface for `A` which tells your contract which functions exist. Interfaces in Solidity behave like header files, and serve similar purposes to the ABI we have been using when calling contracts from the frontend. This allows a contract to know how to encode and decode function arguments and return values for calling external contracts.
@@ -523,4 +543,8 @@ contract TestSafeMath {
 }
 ```
 
+<Quiz questionId="297f987e-5948-413a-84ec-96499db914f2" />
+
 That's all folks! Congratulations on making it this far :D
+
+<SubmitQuiz />
